@@ -2,6 +2,7 @@
 # Author : Waseem Akram ( hackerwasii )
 # github : https://github.com/evildevill
 # Note : we are not responsible for any misuse
+# i faced some kind of error while in this code 
 try:
     import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, cookielib, getpass, mechanize, requests
     from multiprocessing.pool import ThreadPool
@@ -12,7 +13,7 @@ except ImportError:
     os.system('pip2 install mechanize')
     os.system('python2 wasi.py')
 
-reload(sys)
+reload(sys) # this line of script generate error
 sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
